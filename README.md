@@ -65,15 +65,15 @@ Sentinal `giám sát` tình trạng các máy chủ (kể cả master và replic
  
     ```
 
-    c. start redis 7001
-
-    ```
-    redis-server ./redis.conf
-    ```
+    c. start redis 7001: `redis-server ./redis.conf`
 
     check slot assignment: `redis-cli -h 127.0.0.1 -p 7001 CLUSTER NODES`
 
-    d. create cluster: `redis-cli --cluster create 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005 127.0.0.1:7006 --cluster-replicas 1`
+    d. create cluster: 
+
+    ```
+    redis-cli --cluster create 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005 127.0.0.1:7006 --cluster-replicas 1
+    ```
 
     e. test cluster's health: `redis-cli --cluster check 127.0.0.1:7001`
 
