@@ -1,0 +1,57 @@
+# Ignore build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Ignore configuration files
+appsettings.*.json
+appsettings.json
+
+# Ignore Redis-related configuration files and logs
+redis-test/
+redis.conf
+nodes*.conf
+dump.rdb
+appendonly.aof
+*.log
+
+# Ignore IDE-specific files
+.vscode/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+*.dotsettings
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ignore OS-generated files
+*.swp
+*.swo
+
+# Ignore package dependencies
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# Ignore environment-specific configurations
+.env
+*.local.json
+
+# Ignore the .NET project build and publish directories
+.publish/
+dist/
+wwwroot/
+node_modules/
+
+# Ignore temporary files
+*.bak
+*.tmp
+*.old
+
+# Ignore any other files you don’t want tracked
+logs/
