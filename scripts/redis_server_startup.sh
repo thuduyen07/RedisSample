@@ -47,7 +47,6 @@ if [ -d "cluster-test" ]; then
     echo "cluster-test folder exists"
 else
     echo "cluster-test folder does not exist"
-    cd ..
     mkdir cluster-test
     cd cluster-test
     echo "cluster-test folder created"
